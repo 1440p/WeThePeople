@@ -1,0 +1,11 @@
+{% extends "main/base.html" %}
+{% block title %}View Name{% endblock %}
+
+{% block content %}
+	<h1>{{user.name}}</h1>
+	<ul>
+		{% for voter in user.voter_set.all %}
+			<li>{{voter.vote_history}}</li>
+		{% endfor %}
+	</ul>
+{% endblock %}
