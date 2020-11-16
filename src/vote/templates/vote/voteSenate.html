@@ -1,0 +1,99 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} Vote {% endblock %}
+{% block content %}
+
+<center>
+    <div class="body-wrap container-fluid">
+        <div class="main-election container-fluid">
+            <div class="main-election-header container-fluid clearfix"><h3>Federal Election<br> U.S. Senator</h3> </div>
+            <!-- Candidate Split -->
+            <div class="left-candidate-wrap container-fluid">
+                <div class="main-candidate container-fluid">
+                    <div class="candidate-personal container-fluid">
+                        <div class="candidate-name container-fluid"><h3>Mary “MJ” Hegar</h3></div>
+                        <div class="candidate-image container-fluid">
+                            <img class="can-pic" src="{% static 'WeThePeople/MJHegar.jpg' %}">
+                        </div>
+
+                    </div>
+                    <div class="candidate-info container-fluid">
+                        <div class="candidate-content container-fluid">
+                            <div class="candidate-keypoints container-fluid">
+                                <h4 style="color:#356CFF";>DEM</h4>
+                                    <li>Health Care</li>
+                                    <li>Reproductive Rights</li>
+                                    <li>Immigration</li>
+                                    <li>Environment & Climate Change</li>
+                            </div>
+                            <div class="candidate-summary container-fluid">
+                                <h4>"Building A Stronger Texas"</h4>
+                                <a href="https://mjfortexas.com/">View More Information about Mary Hegar's Campaign</a>
+                            </div>
+                            <div class="candidate-vote container-fluid">
+                                <a href="/voteHouse"><button type="button" class="candidate-vote-btn btn btn-success">Click to Vote</button></a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- Candidate Split -->
+            <div class="left-candidate-wrap container-fluid">
+                <div class="main-candidate container-fluid">
+                    <div class="candidate-personal container-fluid">
+                        <div class="candidate-name container-fluid"><h3>John Cornyn</h3></div>
+                        <div class="candidate-image container-fluid">
+                            <img class="can-pic" src="{% static 'WeThePeople/John.jpg' %}">
+                        </div>
+
+
+                    </div>
+                    <div class="candidate-info container-fluid">
+                        <div class="candidate-content container-fluid">
+                            <div class="candidate-keypoints container-fluid">
+                                <h4 style="color:#FF0000";>GOP</h4>
+                                    <li>Immigration & Border Security</li>
+                                    <li>Military & Veterans</li>
+                                    <li>Agriculture</li>
+                                    <li>Foreign Affairs & National Security</li>
+                            </div>
+                            <div class="candidate-summary container-fluid">
+                                <h4>"Don’t Mess with Texas"</h4>
+                                <a href="https://www.johncornyn.com/">View More Information about John Coryn's Campaign</a>
+                            </div>
+                            <div class="candidate-vote container-fluid">
+                                <a href="/voteHouse"><button type="button" class="candidate-vote-btn btn btn-success">Click to Vote</button></a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- Candidate Split -->
+
+
+        </div>
+        <div class="secondary-election container-fluid">
+            <div class="main-election-header container-fluid"><h3></h3> </div>
+            <div class="secondary-election-wrap container-fluid">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer container-fluid"> Voting System Copyright</div>
+
+</div>
+</center>
+{% endblock %}

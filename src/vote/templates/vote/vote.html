@@ -1,0 +1,100 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} Vote {% endblock %}
+{% block content %}
+
+<center>
+    <div class="body-wrap container-fluid">
+        <div class="main-election container-fluid">
+            <div class="main-election-header container-fluid clearfix"><h3>Federal Election<br> President/ Vice-President</h3> </div>
+            <!-- Candidate Split -->
+            <div class="left-candidate-wrap container-fluid">
+                <div class="main-candidate container-fluid">
+                    <div class="candidate-personal container-fluid">
+                        <div class="candidate-name container-fluid"><h3>Joseph R. Biden/ Kamala D. Harris</h3></div>
+                        <div class="candidate-image container-fluid">
+                            <img class="can-pic" src="{% static 'WeThePeople/JoeKamala.jpg' %}">
+                        </div>
+
+                    </div>
+                    <div class="candidate-info container-fluid">
+                        <div class="candidate-content container-fluid">
+                            <div class="candidate-keypoints container-fluid">
+                                <h4 style="color:#356CFF";>DEM</h4>
+                                
+                                    <li>Joe strikes a good balance on foreign policy issues</li>
+                                    <li>Plan to Beat COVID-19</li>
+                                    <li>Jobs and Economic Recovery Plan for Working Families</li>
+                                    <li>Every American Affordable Health Care</li>
+                            </div>
+                            <div class="candidate-summary container-fluid">
+                                <h4>“The one most important ingredient a sitting president needs is the Senate of the same party. It is really, really important,”</h4>
+                                <a href="https://joebiden.com/presidency-for-all-americans/">View More Information about Joe Biden's Campaign</a>
+                            </div>
+                            <div class="candidate-vote container-fluid">
+                                <a href="/voteSenate"><button type="button" class="candidate-vote-btn btn btn-success">Click to Vote</button></a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- Candidate Split -->
+            <div class="left-candidate-wrap container-fluid">
+                <div class="main-candidate container-fluid">
+                    <div class="candidate-personal container-fluid">
+                        <div class="candidate-name container-fluid"><h3>Donald Trump/ Michael R. Pence</h3></div>
+                        <div class="candidate-image container-fluid">
+                            <img class="can-pic" src="{% static 'WeThePeople/DonaldMike.jpg' %}">
+                        </div>
+
+
+                    </div>
+                    <div class="candidate-info container-fluid">
+                        <div class="candidate-content container-fluid">
+                            <div class="candidate-keypoints container-fluid">
+                                <h4 style="color:#FF0000";>GOP</h4>
+                                    <li>National Security And Defense</li>
+                                    <li>Economy And Jobs</li>
+                                    <li>Immigration</li>
+                                    <li>Foreign Policy</li>
+                            </div>
+                            <div class="candidate-summary container-fluid">
+                                <h4>"Pickles, Onions & Progress For All"</h4>
+                                <a href="https://www.donaldjtrump.com/">View More Information about Donald Trump's Campaign</a>
+                            </div>
+                            <div class="candidate-vote container-fluid">
+                                <a href="/voteSenate"><button type="button" class="candidate-vote-btn btn btn-success">Click to Vote</button></a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- Candidate Split -->
+
+
+        </div>
+        <div class="secondary-election container-fluid">
+            <div class="main-election-header container-fluid"><h3></h3> </div>
+            <div class="secondary-election-wrap container-fluid">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer container-fluid"> Voting System Copyright</div>
+
+</div>
+</center>
+{% endblock %}

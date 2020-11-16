@@ -11,7 +11,7 @@ class Users(models.Model):
 	def __str__(self):
 		return self.uid
 
-	name = models.CharField(max_length=40)
+	name = models.CharField(max_length=41)
 	def __str__(self):
 		return self.name
 
@@ -19,7 +19,7 @@ class Users(models.Model):
 	def __str__(self):
 		return self.govid
 
-	ssn = models.CharField(max_length=11)
+	ssn = models.CharField(max_length=255)
 	def __str__(self):
 		return self.ssn
 

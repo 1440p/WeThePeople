@@ -1,0 +1,99 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} Vote {% endblock %}
+{% block content %}
+
+<center>
+    <div class="body-wrap container-fluid">
+        <div class="main-election container-fluid">
+            <div class="main-election-header container-fluid clearfix"><h3>Federal Election<br> U.S. Representative District 8</h3> </div>
+            <!-- Candidate Split -->
+            <div class="left-candidate-wrap container-fluid">
+                <div class="main-candidate container-fluid">
+                    <div class="candidate-personal container-fluid">
+                        <div class="candidate-name container-fluid"><h3>Elizabeth Hernandez</h3></div>
+                        <div class="candidate-image container-fluid">
+                            <img class="can-pic" src="{% static 'WeThePeople/Elizabeth.png' %}">
+                        </div>
+
+                    </div>
+                    <div class="candidate-info container-fluid">
+                        <div class="candidate-content container-fluid">
+                            <div class="candidate-keypoints container-fluid">
+                                <h4 style="color:#356CFF";>DEM</h4>
+                                    <li>National Debt: 27 Trillion Reasons to Eliminate it</li>
+                                    <li>Afffordable Healthcare</li>
+                                    <li>Civil Rights Reform</li>
+                                    <li>Protecting the Environment</li>
+                            </div>
+                            <div class="candidate-summary container-fluid">
+                                <h4>"Putting Policies over Politics"</h4>
+                                <a href="https://lizfortx8.com/">View More Information about Elizabeth Hernandez's Campaign</a>
+                            </div>
+                            <div class="candidate-vote container-fluid">
+                                <a href="/voteHouse"><button type="button" class="candidate-vote-btn btn btn-success">Click to Vote</button></a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- Candidate Split -->
+            <div class="left-candidate-wrap container-fluid">
+                <div class="main-candidate container-fluid">
+                    <div class="candidate-personal container-fluid">
+                        <div class="candidate-name container-fluid"><h3>Kevin Brady</h3></div>
+                        <div class="candidate-image container-fluid">
+                            <img class="can-pic" src="{% static 'WeThePeople/Kevin.jpg' %}">
+                        </div>
+
+
+                    </div>
+                    <div class="candidate-info container-fluid">
+                        <div class="candidate-content container-fluid">
+                            <div class="candidate-keypoints container-fluid">
+                                <h4 style="color:#FF0000";>GOP</h4>
+                                    <li>Border Security</li>
+                                    <li>COVID-19</li>
+                                    <li>High Speed Rail</li>
+                                    <li>Economic Recovery</li>
+                            </div>
+                            <div class="candidate-summary container-fluid">
+                                <h4>"FIGHTING FOR US!"</h4>
+                                <a href="https://www.bradyforcongress.com/">View More Information about Kevin Brady's Campaign</a>
+                            </div>
+                            <div class="candidate-vote container-fluid">
+                                <button type="button" class="candidate-vote-btn btn btn-success">Click to Vote</button>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- Candidate Split -->
+
+
+        </div>
+        <div class="secondary-election container-fluid">
+            <div class="main-election-header container-fluid"><h3></h3> </div>
+            <div class="secondary-election-wrap container-fluid">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer container-fluid"> Voting System Copyright</div>
+
+</div>
+</center>
+{% endblock %}
