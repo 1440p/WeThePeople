@@ -15,3 +15,6 @@ def home(response):
 def v1(response):
 	return render(response, "main/base.html", {})
 	#return HttpResponse("<h1>This is anotrhher View! function v1 or View 1</h1>")
+
+def privacy(response):
+	return render(response, "main/privacy.html", {})
