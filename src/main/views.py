@@ -18,3 +18,6 @@ def v1(response):
 
 def privacy(response):
 	return render(response, "main/privacy.html", {})
+
+def thankyou(response):
+	return render(response, "main/thankyou.html", {})
