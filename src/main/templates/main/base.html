@@ -15,6 +15,7 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous">
     </script>
+    <script src="https://kit.fontawesome.com/df81325bde.js" crossorigin="anonymous"></script>
 
     <title>{% block title %} {% endblock %}</title>
 </head>
@@ -23,7 +24,7 @@
     <!-- HEADER START -->
     <div class="header-wrap container-fluid">
         <div class="header-logo container-fluid">
-            <center><img class="logo-pic" src="{% static 'WeThePeople/WeThePeopleLogo.png' %}" alt="WeThePeopleLogo" width="400" height="250"/></center>
+            <img class="logo-pic" src="{% static 'WeThePeople/WeThePeopleLogo.png' %}" alt="WeThePeopleLogo"/>
         </div>
 
         <div class="navbar-wrap container-fluid">
@@ -67,8 +68,10 @@
 
 
     {% endblock %}
+
 </div>
 
+<div class="footer container-fluid"> WeThePeople Copyright</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

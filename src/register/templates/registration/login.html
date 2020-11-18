@@ -7,10 +7,14 @@ Login
 {% load crispy_forms_tags %}
 
 {% block content %}
-	<form method="POST" class="form-group">
-		{% csrf_token %}
-		{{ form|crispy }}
-		<p> Don't have an account but want to vote? <a href="/register">Register to Vote!</a></p>
-		<button type="submit" class="btn btn-success">Login</button>
-	</form>
+    <div class="login-wrap container-fluid">
+
+        <form method="POST" class="form-group">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <p> Don't have an account but want to vote? <a href="/register">Register to Vote!</a></p>
+            <button type="submit" class="btn btn-success">Login</button>
+        </form>
+
+    </div>
 {% endblock %}

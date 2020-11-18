@@ -1,0 +1,214 @@
+:root {
+	--border-radius: 10px;
+	--box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.33);
+}
+html, body, #body2 {
+    height: 100vh;
+    min-height: 100vh;
+}
+.main-wrap {
+	border: 1px solid lightgray;
+	width: 1250px;
+	min-height: 100%;
+	padding: 0;
+}
+/* HEADER */
+.header-wrap {
+	width: 100%;
+	height: 200px;
+	padding: 0;
+	margin: 0;
+}
+.header-logo {
+	width: 100%;
+	height: 60%;
+}
+.logo-pic {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.navbar-wrap {
+	width: 100%;
+	height: 40%;
+	padding: 0;
+}
+.nav-main {
+	height: 100%;
+	width: 100%;
+}
+/* HEADER */
+.body-wrap {
+	width: 100%;
+	min-height: 100%;
+	padding: 0;
+}
+/* INDEX PAGE */
+
+.count-down-wrap {
+	width: 100%;
+	min-height: 700px;
+	padding: 0;
+}
+.count-down-body {
+	width: 60%;
+	height: 400px;
+	padding: 0;
+	margin-top: 150px;
+
+}
+.count-down-header {
+	width: 100%;
+	height: 60px;
+	text-align: center;
+}
+.count-down-timer {
+	width: 100%;
+	line-height: 30px;
+	text-align: center;
+	font-size: 30px;
+	padding: 0;
+	font-style: italic;
+	font-weight: bolder;
+}
+.election-date-timer {
+	width: 100%;
+	line-height: 60px;
+	text-align: center;
+	font-size: 30px;
+}
+.ready-to-vote {
+	width: 100%;
+	line-height: 60px;
+	text-align: center;
+	font-size: 30px;
+	font-style: italic;
+}
+.or {
+	width: 100%;
+	line-height: 30px;
+	text-align: center;
+	font-size: 30px;
+	font-style: italic;
+}
+.start-here-btn {
+	width: 200px;
+	height: 50px;
+}
+/* INDEX PAGE */
+/*HOME PAGE ELECTION */
+	/*MAIN ELECTION */
+.main-election {
+	width: 100%;
+	height: 700px;
+	margin: 0;
+	padding: 0;
+}
+.main-election-header {
+	width: 100%;
+	height: 70px;
+	text-align: center;
+}
+.left-candidate-wrap {
+	width: 50%;
+	height: 100%;
+	float: left;
+	padding: 0;
+}
+.main-candidate {
+	width: 98%;
+	height: 98%;
+	padding: 0;
+	overflow: hidden;
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
+	-moz-box-shadow: var(--box-shadow);
+	-webkit-box-shadow: var(--box-shadow);
+}
+.candidate-personal {
+	width: 100%;
+	height: 45%;
+	border-bottom: 1px solid lightgray;
+	padding: 0;
+	margin: 0;
+
+}
+.candidate-name {
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	
+}
+.candidate-image {
+	width: 100%;
+	height: 90%;
+	padding: 0;
+}
+.can-pic {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.candidate-info {
+	width: 100%;
+	height: 55%;
+	padding: 0;
+}
+.candidate-content {
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid lightgray;
+	padding: 0;
+}
+.candidate-keypoints {
+	width: 100%;
+	height: 45%;
+	margin: 0;
+}
+.candidate-summary {
+	width: 100%;
+	height: 45%;
+	margin: 0;
+}
+.candidate-vote {
+	width: 100%;
+	height: 10%;
+	padding: 0;
+}
+.candidate-vote-btn {
+	width: 100%;
+	height: 100%;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+
+	/*MAIN ELECTION */
+
+	/*SECONDARY ELECTION */
+.secondary-election {
+	width: 100%;
+	height: 500px;
+	margin: 0;
+	padding: 0;
+
+}
+
+.secondary-election-wrap {
+	width: 100%;
+	height: 700px;
+	border: 1px solid blue;
+}
+	/*SECONDARY ELECTION */
+.privacy-wrap {
+	width: 95%;
+	height: 100%;
+	margin-top: 10px;
+}
+/*HOME PAGE ELECTION */
+.footer {
+	width: 100%;
+	margin: 0 auto;
+	height: 100px;
+	text-align: center;
+}

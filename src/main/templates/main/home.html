@@ -1,138 +1,80 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} Home {% endblock %}
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style/style.css">
 
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+{% block content %}
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Nov 30, 2020 07:00:00").getTime();
 
-	<script src="https://kit.fontawesome.com/df81325bde.js" crossorigin="anonymous"></script>
+    // Update the count down every 1 second
+    var x = setInterval(function () {
 
-	<title>Home</title>
-		<script>
-	// Set the date we're counting down to
-	var countDownDate = new Date("Nov 30, 2020 07:00:00").getTime();
+        // Get today's date and time
+        var now = new Date().getTime();
 
-	// Update the count down every 1 second
-	var x = setInterval(function() {
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
 
-	  // Get today's date and time
-	  var now = new Date().getTime();
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-	  // Find the distance between now and the count down date
-	  var distance = countDownDate - now;
+        // Output the result in an element with id="demo"
+        document.getElementById("count").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
 
-	  // Time calculations for days, hours, minutes and seconds
-	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-	  // Output the result in an element with id="demo"
-	  document.getElementById("count").innerHTML = days + "d " + hours + "h "
-	  + minutes + "m " + seconds + "s ";
-
-	  // If the count down is over, write some text 
-	  if (distance < 0) {
-	  	clearInterval(x);
-	  	document.getElementById("count").innerHTML = "EXPIRED";
-	  }
-	}, 1000);
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("count").innerHTML = "EXPIRED";
+        }
+    }, 1000);
 </script>
-</head>
-<body>
 
 
 
-	<div class="main-wrap container-fluid">
-		<div class="header-wrap container-fluid">
-			<div class="header-logo container-fluid">
-				{% load static %}
-				<img src="{% static 'WeThePeople/WeThePeopleLogo.png' %}" alt="WeThePeople Logo" class="center" width="400" height="250"/>
-			</div>
 
-			<div class="navbar-wrap container-fluid">
-				<nav class="nav-main navbar navbar-expand-lg navbar-dark bg-dark">
-					<a class="navbar-brand" href="#">Navbar</a>
+    <div class="body-wrap container-fluid">
+        <div class="count-down-wrap container-fluid">
+            <div class="count-down-body container-fluid">
+                <div class="count-down-header container-fluid">
+                    <center><h1>Election Day Starts In</h1></center>
+                </div>
+                <div class="count-down-timer container-fluid">
+                    <center>
+                        <h2><b><p id="count"></p></b></h2>
+                    </center>
+                </div>
+                <div class="election-date-timer container-fluid">
+                    <b>
+                        <center>November 3rd, 2020</center>
+                    </b>
+                </div>
+                <div class="ready-to-vote container-fluid">
+                    <center>Ready to Vote?</center>
+                </div>
+                <div class="election-date-timer container-fluid">
+                    <center><a href="/register">
+                        <button type="button" class="btn btn-primary start-here-btn">Start Here</button>
+                    </a></center>
+                </div>
+                <div class="or">
+                    or
+                    </span>
+                    <div class="election-date-timer container-fluid">
+                        <a href="/login">
 
-					<span class="navbar-toggler-icon"></span>
-				</button>
+                                <button type="button" class="btn btn-primary start-here-btn">Already Registered</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/vote">Vote</a>
-						</li>
+        </div>
 
-					</ul>
-
-				</div>
-
-				<form class="form-inline">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="/privacy">Privacy Policy</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/login">Login</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/register">Register</a>
-						</li>
-
-					</ul>
-				</form>
-			</nav>
-		</div>
-
-	</div>
-
-	<div class="body-wrap container-fluid">
-		<div class="count-down-wrap container-fluid">
-			<div class="count-down-body container-fluid">
-				<div class="count-down-header container-fluid">
-					<center><h1>Election Day Starts In</h1></center>
-				</div>
-				<div class="count-down-timer container-fluid">
-					<center><h2><b><p id="count"></p></b></h2></center>
-				</div>
-				<div class="election-date-timer container-fluid">
-					<b><center>November 3rd, 2020</center></b>
-				</div>
-				<div class="ready-to-vote container-fluid">
-					<center>Ready to Vote?</center>
-				</div>
-				<div class="election-date-timer container-fluid">
-					<center><a href="/register"><button type="button" class="btn btn-primary start-here-btn">Start Here</button></a></center>
-				</div>
-				<div class="or"><center>or</center></span>
-					<div class="election-date-timer container-fluid">
-						<a href="/login"><center><button type="button" class="btn btn-primary start-here-btn">Already Registered</button></a></center>
-					</div>
-					<center>Calendar -</center> <i class="icon-calendar-empty"></i>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="footer container-fluid"> <center>Voting System Copyright</center></div>
-
-	</div>
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-</body>
-</html>
+    </div>
+{% endblock %}
