@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+# Created or Preinstalled Django Apps will belong in this list
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -76,6 +77,7 @@ WSGI_APPLICATION = 'WeThePeople.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+# These are the credentials below that connect to our Azure PostgreSQL Database
 
 DATABASES = {
     'default': {
@@ -91,6 +93,7 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
+# Django Authentication Libraries/API help with plenty of Input Validation
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -124,14 +127,19 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
+# This general looks into all static content such as images that are generated on the Website
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "WeThePeople/static"), )
 
 
+# This helps with the Front-End Text field adjustment
+# Bootstrap utlizes HTML, CSS and JavaScript
 
 CRISPY_TEMPLATE_PACK="bootstrap4"
+
+# URL Setup for either logging in or logging out
 
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"

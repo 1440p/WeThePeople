@@ -7,24 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/WeThePeople/settings.py",
-			"settings":
-			{
-				"buffer_size": 3253,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Eddy/my head",
-			"settings":
-			{
-				"buffer_size": 1057,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -58,12 +40,22 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Eddy/Dev/WeThePeople",
-		"/C/Users/Eddy/Dev/WeThePeople/src",
-		"/C/Users/Eddy/Dev/WeThePeople/src/WeThePeople"
 	],
 	"file_history":
 	[
+		"/C/Users/ederi/Dev/WeThePeople/src/main/views.py",
+		"/C/Users/ederi/Dev/WeThePeople/src/main/urls.py",
+		"/C/Users/ederi/Dev/WeThePeople/src/main/models.py",
+		"/C/Users/ederi/Dev/WeThePeople/src/main/apps.py",
+		"/C/Users/ederi/Dev/WeThePeople/src/register/views.py",
+		"/C/Users/ederi/Dev/WeThePeople/src/register/forms.py",
+		"/C/Users/ederi/Dev/WeThePeople/src/register/apps.py",
+		"/C/Users/ederi/Dev/WeThePeople/src/vote/views.py",
+		"/C/Users/ederi/Dev/WeThePeople/src/WeThePeople/settings.py",
+		"/C/Users/ederi/Dev/WeThePeople/src/vote/apps.py",
+		"/C/Users/ederi/Dev/WeThePeople/src/manage.py",
+		"/C/Users/ederi/Dev/WeThePeople/src/WeThePeople/wsgi.py",
+		"/C/Users/ederi/Dev/WeThePeople/src/WeThePeople/urls.py",
 		"/C/Users/Eddy/my head",
 		"/C/Users/Eddy/Dev/trydjango/src/trydjango/settings.py"
 	],
@@ -100,67 +92,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/WeThePeople/settings.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3253,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2251,
-								2251
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1134.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Eddy/my head",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1057,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

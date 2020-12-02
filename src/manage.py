@@ -2,6 +2,9 @@
 import os
 import sys
 
+# THIS IS WHERE THE MAIN FUNCTION STARTS
+# This is the Website Application that Initializes at start
+ 
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "WeThePeople.settings")
     try:

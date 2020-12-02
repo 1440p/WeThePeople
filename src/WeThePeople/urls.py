@@ -18,11 +18,11 @@ from django.urls import path, include
 from register import views as r
 from vote import views as v
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('register/', r.register, name="register"),
-    path("vote/", v.vote, name="vote"),
-    path("voteSenate/", v.voteSenate, name="voteSenate"),
-    path("voteHouse/", v.voteHouse, name="voteHouse"),
-    path('', include("main.urls")),
-    path('', include("django.contrib.auth.urls")),
+    path('admin/', admin.site.urls),                # Pointing to the path of Admin page
+    path('register/', r.register, name="register"),  # Pointing to the registration page path
+    path("vote/", v.vote, name="vote"),             # Pointing to the voting president page path
+    path("voteSenate/", v.voteSenate, name="voteSenate"), # Pointing to the voting senator page path
+    path("voteHouse/", v.voteHouse, name="voteHouse"),  # Pointing to the voting house of representative page path
+    path('', include("main.urls")),                     # main URL path that holds other seperated pages, such as the privacy policy
+    path('', include("django.contrib.auth.urls")),  # Page in use with authentication library 
 ]

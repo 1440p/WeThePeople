@@ -9,6 +9,8 @@ https://docs.djangoproject.com/en/2.0/howto/deployment/wsgi/
 
 import os
 
+# Web Server Gateway Interface
+# Used as a calling Convention to Forward Server requests
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "WeThePeople.settings")
