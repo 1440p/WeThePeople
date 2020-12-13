@@ -66,3 +66,30 @@ or
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+You can Ignore the stuff below
+
+
+
+Django Routine Instructions:
+cd to project folder (outside of src, up to you)
+to create a virtual environment in a project do "virtualenv ."
+to start a virtual environment project on windows ".\Scripts\activate" , linux "source ./Scripts/activate"
+while activated "pip install " anything you need for the project
+in src folder, to create django project do "django-admin startproject project_name ."
+to run django do, "python manage.py runserver"
+to make new migrations do, "python manage.py makemigrations"
+to pass new migrations do, "python manage.py migrate"
+create "project_name.sublime-project" outside of src folder for easy sublime integration
+
+Github repo Routying Instructions After Changes:
+git add .
+git commit -am 'Update Message'
+git push
+
+Dead Database Server Login vvv
+Server/Host: wethepeople.postgres.database.azure.com
+Database/Name: wethepeopledb
+Port: 5432
+Username/User: WeThePeople@wethepeople
+Password: COSC4319@SHSU
